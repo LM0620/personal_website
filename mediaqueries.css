@@ -1,0 +1,11 @@
+/*Media Query: 用于在特定条件下应用一组CSS规则
+eg:在屏幕宽度小于或等于1200像素时应用一组样式规则
+*/
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display:none;
+  }
+  #hamburger-nav{
+    display:flex;
+  }
+}
