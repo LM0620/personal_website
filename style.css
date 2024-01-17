@@ -1,7 +1,6 @@
 /* General*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
 
-
 * {
   margin: 0;
   padding: 0;
@@ -159,6 +158,7 @@ section {
 
 .section-container {
   display: flex;
+  
 }
 
 /* Profile Section */
@@ -178,33 +178,34 @@ section {
   margin:auto 0;
 }
 
-.section_text {
+.section-text {
   align-self: center;
   text-align: center;
 }
 
-.about-picture{
+.about-picture,
+.profile-picture{
   border-radius: 40px;
 }
 
-.section_text p{
+.section-text p{
   font-weight: 600;
   margin-top: 0.5rem;
 }
 
-.section_text_p1 {
+.section-text-p1 {
   text-align: center;
   font-size: 1.5rem;
 }
 
-.section_text_p2 {
+.section-text-p2 {
   text-align: center;
   font-size: 1.75rem;
   margin-bottom: 1rem;
 }
 
 .title {
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: center;
 }
 
@@ -288,5 +289,92 @@ section {
   }
 }
 
+/* About Section */
 
+#about {
+  position: relative;
+}
 
+.about-details-container {
+  margin-top: 8rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-containers {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  border-radius: 2rem;
+  border: rgb(163, 163, 163) 0.1rem solid;
+  text-align: center;
+  background-color: white;
+}
+
+.arrow {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.section-container {
+  gap: 4rem;
+  height:  80%;
+}
+
+.section_pic-container {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+.bachelor-degree,
+.master-degree {
+  font-weight: bold;
+  padding-top: 6px;
+}
+
+/* Experience Section */
+
+#experience {
+  position: relative;
+}
+
+.experience-sub-title {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content:center;
+}
+
+article {
+  width: 10rem;
+  gap: 0.5rem;
+  display: flex;
+  align-items: center; /* 确保图标和文本在同一水平线上对齐 */
+}
+
+article .icon {
+  cursor: default;
+}
